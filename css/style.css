@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: Arial, sans-serif;
 }
 
 html, body {
@@ -14,7 +14,6 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  padding: 20px 0px 0px 20px;
 }
 
 :focus, :active {
@@ -64,12 +63,86 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
-  font-weight: 400;
+  font-weight: inherit;
 }
 
-body > p {
-  color: red;
+.header .panel .panel__search, .header .panel .panel__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-body .test__1 {
-  color: blue;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #121212;
+}
+.header .panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.header .panel .panel__nav {
+  width: 60%;
+}
+.header .panel .panel__nav .panel__nav-item-icon {
+  padding: 0px 20px 0px 0px;
+}
+.header .panel .panel__nav .panel__nav-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+.header .panel .panel__nav .panel__nav-item:last-child {
+  margin-right: 20px;
+}
+.header .panel .panel__nav .panel__nav-item:hover {
+  transition: background-color 1s;
+  background-color: green;
+  cursor: pointer;
+}
+.header .panel .panel__nav .panel__nav-item .nav-text {
+  text-align: center;
+}
+.header .panel .panel__search {
+  background-color: green;
+  width: 30%;
+  margin: auto 0px;
+  border-radius: 15px;
+  height: 50px;
+  justify-content: space-around;
+  transition: background-color 0.5s;
+}
+.header .panel .panel__search:hover {
+  transition: background-color 1s;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1 1 auto;
+  background-color: brown;
+}
+
+.footer {
+  height: 50px;
+  background-color: cornsilk;
 }
