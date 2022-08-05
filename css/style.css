@@ -211,6 +211,10 @@ body {
   content: "🔴";
   padding: 0px 4px 0px 0px;
 }
+.main .content__row .content__column2 .content__column-item .content-list ul li:active {
+  background: url(../src/social.png) no-repeat;
+  background-size: 200px 48px;
+}
 
 .footer {
   background-color: #121212;
