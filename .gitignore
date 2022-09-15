@@ -1,2 +1,4 @@
-/src
+*.png
+*.jpg
 /gitignore
+/src
